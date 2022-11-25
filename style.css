@@ -1,0 +1,29 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* background-color: aqua; */
+  background-image: url(5466289.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2{
+  color: #000;
+  margin-top: 100;
+}
+.button{
+  color: gold;
+}
+button:hover{
+  color:aliceblue;
+}
+.container{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: auto ;
+}
+input{
+  width:fit-content;
+  height: auto;
+}
