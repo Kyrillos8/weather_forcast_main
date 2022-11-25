@@ -13,6 +13,7 @@ if(array_key_exists('submit',$_GET)){
         $weatherTemp = $weatherarray['current']['temp_c'];
         $cityTime = $weatherarray['location']['localtime'];
         $weatherIcon = $weatherarray['current']['condition']['icon'];
+        $weatherdes = $weatherarray['current']['condition']['text'];
                     }
     if(!$_GET['city']){
         echo 'error';
@@ -43,7 +44,7 @@ if(array_key_exists('submit',$_GET)){
             echo "City: " .  $weather . "<br>";
             echo "The temp is: " . $weatherTemp . " C" . "<br>";
             echo "Time is: " . $cityTime . "<br>";
-            echo "<img src= $weatherIcon />";
+            echo "<img src= $weatherIcon alt = $weatherdes />";
         }else{
             echo 'error';
         }
